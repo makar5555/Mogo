@@ -1,4 +1,12 @@
+:root {
 
+    --color-heder: #95E1D3,#F38181;
+    --color-text-primary: #333333;
+    --color-text-secondary: #B6B6B6;
+    --color-background: #E5E5E5;
+    --color-card-bg: #B6B6B6;
+    --color-accent: #B6B6B6;
+}
     body {
       font-family: Arial, sans-serif;
       margin: 0;
