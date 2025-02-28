@@ -1,130 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="style.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MOGO</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>M0G0</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
-      <a class="title" href="#">MoGo</a>
-      <nav class="header-navigation">
-        <ul header="header-list>
-            <li class="header-item"><a class="header-list" href="#">About</a></li>
-            <li class="header-item"><a class="header-list" href="#">Service</a></li>
-            <li class="header-item"><a class="header-list" href="#">Work</a></li>
-            <li class="header-item"><a class="header-list" href="#">Blog</a></li>
-            <li class="header-item"><a class="header-list" href="#">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <a href="#" class="header-logo">MoGo</a>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICE</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">WORK</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
-      <section class="work">
-        <p class="work-text">We work with</p>
-        <h2 class="work-subtitle">Amazing Services</h2>
-        <ul class="work-list>
-          <li class="work-item">
-            <article class="item-clock>
-              <img class="clock-img src="./images/alarm.png" alt="Clock" />
-              <h3 class="clock-subtitle">Photography</h3>
-              <p class="clock-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </article>
-          </li>
-          <li class="work-item">
-            <article class="item-graph">
-              <img class="graph-img" src="./images/bar-graph.png" alt="Bar Graph" />
-              <h3 class="graph-subtitle>Photography</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </article>
-          </li>
-          <li class="work-item>
-            <article class="item-display">
-              <img class="item-img" src="./images/display.png" alt="Display" />
-              <h3 class="item -subtitle">Photography</h3>
-              <p class="item-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </article>
-          </li>
-          <li class="work-item">
-            <article class="item-paper">
-              <img class="paper-img" src="./images/paper.png" alt="Paper" />
-              <h3 class="paper-subtitle">Photography</h3>
-              <p class="paper-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </article>
-          </li>
-          <li class="work-item">
-            <article class="item-home">
-              <img class="home-img" src="./images/home.png" alt="Home" />
-              <h3 class="home-img">Photography</h3>
-              <p class="home-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </article>
-          </li>
-          <li class="work-item">
-            <article class="item-display">
-              <img class="display-img" src="./images/display.png" alt="Display" />
-              <h3 class="display-subtitle">Photography</h3>
-              <p class="display-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-            </article>
-          </li>
-        </ul>
+      <section class="service">
+        <div class="container">
+          <p class="service-subtitle">We work with</p>
+          <h2 class="service-title">Amazing Services</h2>
+          <ul class="service-list">
+            <li class="service-item">
+              <article class="service-card">
+                <img class="service-img" src="./images/alarm.png" alt="Clock" />
+                <h3 class="service-title">Photography</h3>
+                <p class="service-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </article>
+            </li>
+            <li class="service-item">
+              <article class="service-card">
+                <img
+                  class="service-img"
+                  src="./images/bar-graph.png"
+                  alt="Bar Graph"
+                />
+                <h3 class="service-title">Photography</h3>
+                <p class="service-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </article>
+            </li>
+            <li class="service-item">
+              <article class="service-card">
+                <img
+                  class="service-img"
+                  src="./images/display.png"
+                  alt="Display"
+                />
+                <h3 class="service-title">Photography</h3>
+                <p class="service-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="wwa">
-        <h2 class="wwa-subjeckt">Who we are</h2>
-        <h2 class="wwa-subtitle>Meet Our Team</h2>
-        <p class="wwa-text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <ul class="list">
-          <li class="wwa-item">
-
-Yaminiuk 20000000 Makar, [02.02.2025 0:00]
-<img class="witem-img" src=./images/first-man.png" alt="Matthew Dix" />
-            <h3 class="item-subtitle3">Matthew Dix</h3>
-            <p class="item-text">Graphic Design</p>
-          </li>
-          <li class="wwa-item">
-            <img class="item-img" src="./images/second-man.png" alt="Christopher Campbell" />
-            <h3 class="item-subtitle3">Christopher Campbell</h3>
-            <p class="item-text">Branding/UX Design</p>
-          </li>
-          <li class="wwa-item>
-            <img class="item-img" src="./images/third-man.png" alt="Michael Fertig" />
-            <h3 class="item-subtitle3">Michael Fertig</h3>
-            <p class="item-text">Developer</p>
-          </li>
-        </ul>
+      <section class="about">
+        <div class="container">
+          <h2 class="about-subtitle">Who we are</h2>
+          <h2 class="about-title">Meet Our Team</h2>
+          <p class="about-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ul class="about-list">
+            <li class="about-item">
+              <img
+                class="about-img"
+                src="./images/first-man.png"
+                alt="Matthew Dix"
+              />
+              <h3 class="about-name">Matthew Dix</h3>
+              <p class="about-role">Graphic Design</p>
+            </li>
+            <li class="about-item">
+              <img
+                class="about-img"
+                src="./images/second-man.png"
+                alt="Christopher Campbell"
+              />
+              <h3 class="about-name">Christopher Campbell</h3>
+              <p class="about-role">Branding/UX Design</p>
+            </li>
+            <li class="about-item">
+              <img
+                class="about-img"
+                src="./images/third-man.png"
+                alt="Michael Fertig"
+              />
+              <h3 class="about-name">Michael Fertig</h3>
+              <p class="about-role">Developer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer-copyrigth">&copy; 2016 MoGo free PSD template by <a href="#">Laaqiq</a></p>
-      <form class="footer-subscribe">
-        <input class="subsribe-email" type="email" placeholder="Your Email" />
-        <button class="subscribe-button" type="submit">Subscribe .</button>
-      </form>
+      <div class="container">
+        <p class="footer-copyright">
+          &copy; 2016 MoGo free PSD template by <a href="#">Laaqiq</a>
+        </p>
+        <form class="footer-form">
+          <input class="footer-input" type="email" placeholder="Your Email" />
+          <button class="footer-button" type="submit">Subscribe .</button>
+        </form>
+      </div>
     </footer>
   </body>
 </html>
+<!-- якщо ви це читаєте то знайте що я сігма -->
