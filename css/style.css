@@ -1,67 +1,115 @@
 :root {
-    --primary-text: #B6B6B6;
-    --primary-title: #333333;
-    --third-text: #F38181;
-    --secondary-text-title: #95E1D3;
-    --fourth-text: #333333;
-    --primary-button-color: #95E1D3;
+  --primary-text: rgba(182, 182, 182, 1);
+  --primary-title: rgba(51, 51, 51, 1);
+  --third-text: rgba(243, 129, 129, 1);
+  --secondary-text-title: rgba(149, 225, 211, 1);
+  --fourth-text: rgba(51, 51, 51, 1);
+  --primary-button-color: rgba(149, 225, 211, 1);
+}
 :root{
-    --main-font: "Montserrat", "sans-serif";
-    --second-font: "Roboto", "sans-serif";
-    --third-font: "Kaushan Script", "sans-serif";
-    }
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
+--background: rgba(0, 0, 0, 1);
+--background: rgba(255, 255, 255, 1);
 }
 
- .header {
+:root {
+  --main-font: "Montserrat", "sans-serif";
+  --second-font: "Roboto", "sans-serif";
+  --third-font: "Kaushan Script", "sans-serif";
+}
+*{
+  box-sizing: border-box;
+  list-style: none;
+}
+body{
+  font-size: 15px;
+  font-family: var(--main-font);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.header {
   margin-top: 17px;
   margin-bottom: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .header-nav {
-    padding-top: 15;
+  padding-top: 15;
 }
 
 .header-logo {
-    padding-bottom: 12px;
+  padding-bottom: 12px;
+  color: var(--primary-button-color);
+  font-family: var(--main-font);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
- .service-subtitle {
+.nav-list{
+  display: flex;
+  gap: 55px;
+  text-transform: uppercase;
+}
+.nav-link{
+  color: var(--primary-button-color);
+  text-decoration: none;
+}
+.nav-link:hover{
+  color: var(--third-text);
+}
+.services{
+  display: flex;
+}
+.service-subtitle {
   margin-bottom: 20px;
-}
-.service-title {
-  margin-bottom: 109px;
-} 
-.service-item:nth-child(n+3) {
- margin-top: 100px; 
- padding-bottom: 100px;
+  font-family: var(--third-font);
+  font-size: 24px;
 }
 
- .about-subtitle {
+.service-title {
+  padding-bottom: 20px;
+}
+
+.service-item:nth-child(n+3) {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-subtitle {
   margin-bottom: 17px;
 }
-about-title {
+
+.about-title {
   margin-bottom: 85px;
 }
+
 .about-text {
   margin-bottom: 27px;
 }
+
 .about-name {
   margin-top: 30px;
   margin-bottom: 11px;
-} 
+}
+
 .about-role {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .footer-copyright {
-    padding-top: 22px;
-    padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 20px;
 }
 
 .footer-button {
-    padding-top: 9px;
-    padding-bottom: 10px;
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
