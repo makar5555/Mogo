@@ -57,16 +57,16 @@ body{
   letter-spacing: 0%;
 }
 
-.nav-list{
+.header-nav-list{
   display: flex;
   gap: 55px;
   text-transform: uppercase;
 }
-.nav-link{
+.header-nav-link{
   color: var(--primary-button-color);
   text-decoration: none;
 }
-.nav-link:hover{
+.header-nav-link:hover{
   color: var(--third-text);
 }
 .service-card{
