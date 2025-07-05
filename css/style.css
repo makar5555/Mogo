@@ -1,9 +1,9 @@
 :root {
   --primary-text: rgba(182, 182, 182, 1);
   --primary-title: rgba(51, 51, 51, 1);
-  --third-text: rgba(243, 129, 129, 1);
+  --third-color-text: rgba(243, 129, 129, 1);
   --secondary-text-title: rgba(149, 225, 211, 1);
-  --fourth-text: rgba(51, 51, 51, 1);
+  --fourth-color-text: rgba(51, 51, 51, 1);
   --primary-button-color: rgba(149, 225, 211, 1);
 }
 :root{
@@ -17,12 +17,12 @@
   --third-font: "Kaushan Script", "sans-serif";
 }
 *{
-  list-style: none;
+  box-sizing: border-box;
 }
 body{
   font-size: 15px;
   font-family: var(--main-font);
-  color: var(--fourth-text);
+  color: var(--fourth-color-text);
 }
 
 .container {
@@ -34,8 +34,8 @@ body{
   justify-content: space-between;
 }
 .header {
-  margin-top: 17px;
-  margin-bottom: 68px;
+  padding-top: 17px;
+  padding-bottom: 68px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,44 +50,59 @@ body{
   padding-bottom: 12px;
   color: var(--primary-button-color);
   font-family: var(--main-font);
-  text-decoration: none;
   font-size: 30px;
   font-weight: 700;
   line-height: 100%;
-  letter-spacing: 0%;
 }
 
-.header-nav-list{
+.header-list{
   display: flex;
   gap: 55px;
   text-transform: uppercase;
 }
-.header-nav-link{
+.header-link{
   color: var(--primary-button-color);
-  text-decoration: none;
 }
-.header-nav-link:hover{
-  color: var(--third-text);
+.header-link:hover{
+  color: var(--third-color-text);
 }
-.service-card{
-  display: flex;
-  gap: 18px;
-  font-family: var(--main-font);
-  font-size: 15px;
-}
-.service-text{
-  font-size: 15px;
-  color: var(--primary-text);
-}
+
 .service-list{
   display: flex;
   flex-wrap: wrap;
   column-gap: 70px;
   justify-content: center;
 }
+.service-item{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-basis: calc((100% - 140px) / 3);
+}
+
+.service-card{
+  display: flex;
+  gap: 18px;
+  font-family: var(--main-font);
+  font-size: 15px;
+}
 .service-img{
   height: 37px;
   width: 37px;
+}
+
+.service-title {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.service-text{
+  font-size: 15px;
+  color: var(--primary-text);
 }
 .service-subtitle {
   margin-bottom: 20px;
@@ -100,34 +115,16 @@ body{
   margin: auto;
   width: 60px;
   height: 4px;
-  background-color: var(--third-text);
-}
-.service-title {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 100%;
-  text-transform: uppercase;
-  text-align: center;
+  background-color: var(--third-color-text);
 }
 .service-caption{
   padding-bottom: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
 }
 
-.service-item{
-  margin-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-  flex-basis: calc((100% - 140px) / 3);
-}
+
 .about-list{
   display: flex;
   gap: 30px;
@@ -152,12 +149,6 @@ body{
   text-align: center;
 }
 
-.about-dec_element{
-  margin: auto;
-  width: 60px;
-  height: 4px;
-  background-color: var(--third-text);
-}
 
 .about-text {
   padding-top: 45px;
@@ -169,8 +160,8 @@ body{
 }
 
 .about-name {
-  margin-top: 30px;
-  margin-bottom: 11px;
+  padding-top: 30px;
+  padding-bottom: 11px;
   text-align: center;
   font-family: var(--main-font);
   font-size: 14px;
@@ -190,8 +181,7 @@ body{
   font-family: var(--main-font);
 }
 .footer-link{
-  color: var(--third-text);
-  text-decoration: none;
+  color: var(--third-color-text);
 }
 .footer-copyright {
   padding-top: 22px;
@@ -201,7 +191,7 @@ body{
   display: flex;
 }
 .footer-input{
-  flex-wrap: nowrap;
+  /*flex-wrap: nowrap;*/
   border: 2px solid var(--primary-text);
   border-right: none;
 }
